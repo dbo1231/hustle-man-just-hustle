@@ -180,7 +180,7 @@
   }
 
   function init3D(){
-    if(!window.THREE){threeReady=false;return;}
+    if(!window.THREE){threeReady=false;toast('3D engine did not load. Check your internet connection and refresh.');return;}
     try{
       threeReady=true;
       const canvas=$('#scene');
